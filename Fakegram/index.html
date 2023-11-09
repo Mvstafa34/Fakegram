@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakegram</title>
+    <link rel="icon" type="image/x-icon" href="./img/icons8-fakegram-400.png">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="./scripts/arrays.js"></script>
+    <script src="./scripts/script.js"></script>
+    
+</head>
+
+<body onload="render()">
+    <nav id="left-nav" class="left-nav">
+        <div class="logo-div">
+            <img class="logo" src="./img/Fakegram.png" alt="Logo">
+            <img class="logo-small" src="./img/icons8-fakegram.svg" alt="Logo">
+        </div>
+        <div id="pages-div" class="pages-div">
+            <div class="pages">
+                <img src="./img/Home.svg" alt="Startseite">
+                <p><b>Startseite</b></p>
+            </div>
+            <div class="search pages">
+                <img src="./img/Lens.svg" alt="Suche">
+                <p>Suche</p>
+            </div>
+            <div class="pages">
+                <img id="discover" src="./img/Discover.svg" alt="Entdecken">
+                <p>Entdecken</p>
+            </div>
+            <div class="pages">
+                <img src="./img/Reels.svg" alt="Reels">
+                <p>Reels</p>
+            </div>
+            <div class="pages">
+                <img src="./img/Messages.svg" alt="Nachrichten">
+                <p>Nachrichten</p>
+            </div>
+            <div class="notifications pages">
+                <img src="./img/Like.svg" alt="Benachrichtigungen">
+                <p>Benachrichtigungen</p>
+            </div>
+            <div class="pages">
+                <img src="./img/Upload.svg" alt="Erstellen">
+                <p>Erstellen</p>
+            </div>
+            <div id="profile-render" class="pages">
+
+            </div>
+        </div>
+        <div id="switch-div" class="pages switch-div">
+            <div class="darkmode">
+                <label class="switch">
+                    <input onclick="darkmode()" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <p><b>Nachtmodus</b></p>
+        </div>
+        <div id="more-div" class="more-div pages">
+            <img src="./img/More.svg" alt="Dark Mode">
+            <p>Mehr</p>
+        </div>
+    </nav>
+    <main>
+        <section class="for-you">
+            <div>
+                <div id="feed-option" class="feed-option">
+                    <div id="switch-div" class="pages switch-div mobile">
+                        <div class="darkmode">
+                            <label class="switch">
+                                <input onclick="darkmode()" type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="searchbar"><input type="text" placeholder="Suche"></div>
+                    <div class="notifications pages mobile">
+                        <img src="./img/Like.svg" alt="Benachrichtigungen">
+                        <p>Benachrichtigungen</p>
+                    </div>
+                    <span><b>Für dich</b></span>
+                    <span>Gefolgt</span>
+                </div>
+                <div id="stories" class="stories">
+
+                </div>
+            </div>
+            <article id="feed" class="feed">
+
+            </article>
+        </section>
+        <nav class="right-nav">
+            <div>
+                <div id="suggestions" class="suggestions">
+                    <h3>Vorschläge für dich</h3>
+                    <span><b>Alle ansehen</b></span>
+                </div>
+                <div id="right-nav">
+
+                </div>
+            </div>
+        </nav>
+    </main>
+</body>
+
+</html>
